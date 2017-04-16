@@ -1,0 +1,495 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="es" xml:lang="es" xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+<link rel="icon" type="image/ico" href="img/icono.ico" />
+<link rel="stylesheet" type="text/css" href="estilos.css" />
+<meta http-equiv="content-type" content="text/html;  charset=utf-8" />
+<title> Curso estructura básica HTML </title>
+<meta http-equiv="content-language" content="es" />
+<link rel="license" type="text/html" href="http://creativecommons.org/licenses/by-sa/4.0/" />
+<meta name="generator" content="eXeLearning 2.1 - exelearning.net" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+
+<body>
+
+<div align="center">
+<table id="pagina">
+<tr>
+  <td id="cabecera">
+  <a href="index.html"><img src="img/logo.png" id="logo"></a>
+  <img src="img/logoUNAD.png" id="logounad">
+  </td>
+</tr>
+ 
+<tr>
+  <td id="menu">
+  <ul class="nav">
+	<li><a href="index.html">Inicio</a></li>
+	<li><a href="historia_html.html" id="actual">Lecturas</a>
+	<ul>
+		<li><a href="historia_html.html">Historia HTML</a></li>
+		<li><a href="etiquetas_html.html">Etiquetas HTML</a></li>
+		<li><a href="etiqueta_head.html">Etiqueta HEAD</a></li>
+		<li><a href="etiqueta_body.html">Etiqueta BODY</a></li>
+		<li><a href="atributos.html">Atributos</a></li>
+	</ul>
+	</li>
+	<li><a href="video_etiquets_html.html">Multimedia</a>
+	<ul>
+		<li><a href="video_etiquets_html.html">Video - Etiquetas HTML</a></li>
+		<li><a href="video_css.html">Video - CSS</a></li>
+	</ul>
+	</li>
+	<li><a href="sopa_de_letras.html">Actividades</a>
+		<ul>
+		<li><a href="sopa_de_letras.html">Sopa de letras</a></li>
+		<li><a href="crucigrama.html">Crucigrama</a></li>
+		<li><a href="relacionar_columnas.html">Relacionar columnas</a></li>
+		<li><a href="completar_texto.html">Completar texto</a></li>
+		<li><a href="cuestionario.html">Cuestionario</a></li>
+		<li><a href="videoquiz.html">Videoquiz</a></li>
+	</ul>
+	</li>
+	<li><a href="autores.html">Autores</a></li>
+	</ul>
+  </td>
+</tr>
+ 
+<tr>
+  <td id="centro">
+
+  
+<table id="contenido">
+ <tr>
+  <td id="cizquierdo">
+
+<h1>Etiquetas y Atributos HTML</h1>  
+  <h2>Elemento raíz</h2>
+
+<table id="tabla_estandar">
+ <tbody>
+  <tr>
+   <th>Elemento</th>
+   <th>Descripcion</th>
+  </tr>
+  <tr>
+   <td><strong>&lt;!DOCTYPE html&gt;</strong></td>
+   <td>Define que el documento esta bajo el estandar de HTML 5</td>
+  </tr>
+ </tbody>
+</table>
+<p></p>
+<table id="tabla_estandar">
+ <thead>
+  <tr>
+   <th scope="col">Elemento</th>
+   <th scope="col">Descripción</th>
+  </tr>
+ </thead>
+ <tbody>
+  <tr>
+   <td><strong>&lt;html&gt;</strong></td>
+   <td>Representa la raíz de un documento HTML o XHTML. Todos los demás elementos deben ser descendientes de este elemento.</td>
+  </tr>
+ </tbody>
+</table>
+
+<h2>Metadatos documento HTML</h2>
+
+<table id="tabla_estandar">
+ <thead>
+  <tr>
+   <th scope="col">Elemento</th>
+   <th scope="col">Descripción</th>
+  </tr>
+ </thead>
+ <tbody>
+  <tr>
+   <td><strong>&lt;head&gt;</strong></td>
+   <td>Representa una colección de metadatos acerca del documento, incluyendo enlaces a, o definiciones de, scripts y hojas de estilo.</td>
+  </tr>
+  <tr>
+   <td><strong>&lt;title&gt;</strong></td>
+   <td>Define el título del documento, el cual se muestra en la barra de título del navegador o en las pestañas de página. Solamente puede contener texto y cualquier otra etiqueta contenida no será interpretada.</td>
+  </tr>
+  <tr>
+   <td><strong>&lt;base&gt;</strong></a></td>
+   <td>Define la URL base para las URLs relativas en la página.</td>
+  </tr>
+  <tr>
+   <td><strong>&lt;link&gt;</strong></td>
+   <td>Usada para enlazar JavaScript y CSS externos con el documento HTML actual.</td>
+  </tr>
+  <tr>
+   <td><strong>&lt;meta&gt;</strong></td>
+   <td>Define los metadatos que no pueden ser definidos usando otro elemento HTML.</td>
+  </tr>
+  <tr>
+   <td><strong>&lt;style&gt;</strong></td>
+   <td>Etiqueta de estilo usada para escribir CSS en línea.</td>
+  </tr>
+ </tbody>
+</table>
+
+<h2>Secciones</h2>
+
+<table id="tabla_estandar">
+ <thead>
+  <tr>
+   <th scope="col">Elemento</th>
+   <th scope="col">Descripción</th>
+  </tr>
+ </thead>
+ <tbody>
+  <tr>
+   <td><strong>&lt;body&gt;</strong></a></td>
+   <td>
+    <div>Representa el contenido principal de un documento HTML. Solo hay un elemento <code>&lt;body&gt;</code> en un documento.</div>
+   </td>
+  </tr>
+  <tr>
+   <td><strong>&lt;section&gt;</strong></td>
+   <td>Define una sección en un documento.</td>
+  </tr>
+  <tr>
+   <td><strong>&lt;nav&gt;</strong></td>
+   <td>Define una sección que solamente contiene enlaces de navegación</td>
+  </tr>
+  <tr>
+   <td><strong>&lt;article&gt;</strong></td>
+   <td>Define contenido autónomo que podría existir independientemente del resto del contenido.</td>
+  </tr>
+  <tr>
+   <td><strong>&lt;aside&gt;</strong></td>
+   <td>Define algunos contenidos vagamente relacionados con el resto del contenido de la página. Si es removido, el contenido restante seguirá teniendo sentido</td>
+  </tr>
+  <tr>
+   <td><strong>&lt;h1&gt;,&lt;h2&gt;,&lt;h3&gt;,&lt;h4&gt;,&lt;h5&gt;,&lt;h6&gt;</strong></td>
+   <td>Los elemento de cabecera  implementan seis niveles de cabeceras de documentos; <code>&lt;h1&gt;</code> es la de mayor y <code>&lt;h6&gt;</code> es la de menor impotancia. Un elemento de cabecera describe brevemente el tema de la sección que introduce.</td>
+  </tr>
+  <tr>
+   <td><strong>&lt;header&gt;</strong></td>
+   <td>Define la cabecera de una página o sección. Usualmente contiene un logotipo, el título del sitio Web y una tabla de navegación de contenidos.</td>
+  </tr>
+  <tr>
+   <td><strong>&lt;footer&gt;</strong></td>
+   <td>Define el pie de una página o sección. Usualmente contiene un mensaje de derechos de autoría, algunos enlaces a información legal o direcciones para dar información de retroalimentación.</td>
+  </tr>
+  <tr>
+   <td><strong>&lt;address&gt;</strong></td>
+   <td>Define una sección que contiene información de contacto.</td>
+  </tr>
+  <tr>
+   <td><strong>&lt;main&gt;</strong></td>
+   <td>Define el contenido principal o importante en el documento. Solamente existe un elemento <code>&lt;main&gt;</code> en el documento.</td>
+  </tr>
+ </tbody>
+</table>
+
+
+<h2>Agrupación de Contenido</h2>
+
+<table id="tabla_estandar">
+ <thead>
+  <tr>
+   <th scope="col">Elemento</th>
+   <th scope="col">Descripción</th>
+  </tr>
+ </thead>
+ <tbody>
+  <tr>
+   <td><strong>&lt;p&gt;</strong></td>
+   <td>Define una parte que debe mostrarse como un párrafo.</td>
+  </tr>
+  <tr>
+   <td><strong>&lt;hr&gt;</strong></td>
+   <td>Representa un quiebre temático entre parrafos de una sección o articulo o cualquier contenido.</td>
+  </tr>
+  <tr>
+   <td><strong>&lt;pre&gt;</strong></td>
+   <td>Indica que su contenido esta preformateado y que este formato debe ser preservado.</td>
+  </tr>
+  <tr>
+   <td><strong>&lt;blockquote&gt;</strong></td>
+   <td>Representa una contenido citado desde otra fuente.</td>
+  </tr>
+  <tr>
+   <td><strong>&lt;ol&gt;</strong></td>
+   <td>Define una lista ordenada de artículos.</td>
+  </tr>
+  <tr>
+   <td><strong>&lt;ul&gt;</strong></td>
+   <td>Define una lista de artículos sin orden.</td>
+  </tr>
+  <tr>
+   <td><strong>&lt;li&gt;</strong></td>
+   <td>Define un artículo de una lista ennumerada.</td>
+  </tr>
+  <tr>
+   <td><strong>&lt;dl&gt;</strong></td>
+   <td>Define una lista de definiciones, es decir, una lista de términos y sus definiciones asociadas.</td>
+  </tr>
+  <tr>
+   <td><strong>&lt;dt&gt;</strong></td>
+   <td>Representa un término definido por el siguiente <code>&lt;dd&gt;</code>.</td>
+  </tr>
+  <tr>
+   <td><strong>&lt;dd&gt;</strong></td>
+   <td>Representa la definición de los terminos listados antes que él.</td>
+  </tr>
+  <tr>
+   <td><strong>&lt;figure&gt;</strong></td>
+   <td>Representa una figura ilustrada como parte  del documento.</td>
+  </tr>
+  <tr>
+   <td><strong>&lt;figcaption&gt;</strong></td>
+   <td>Representa la leyenda de una figura.</td>
+  </tr>
+  <tr>
+   <td><strong>&lt;div&gt;</strong></td>
+   <td>Representa un contenedor genérico sin ningún significado especial.</td>
+  </tr>
+ </tbody>
+</table>
+
+<h2>Contenido incrustado</h2>
+
+<table id="tabla_estandar">
+ <thead>
+  <tr>
+   <th scope="col">Elemento</th>
+   <th scope="col">Descripción</th>
+  </tr>
+ </thead>
+ <tbody>
+  <tr>
+   <td><strong>&lt;img&gt;</strong></td>
+   <td>Representa una <em>imagen</em>.</td>
+  </tr>
+  <tr>
+   <td><strong>&lt;iframe&gt;</strong></td>
+   <td>Representa un <em>contexto anidado de navegación</em>, es decir, un documento HTML embebido.</td>
+  </tr>
+  <tr>
+   <td><strong>&lt;embed&gt;</strong></td>
+   <td>Representa un <em>punto de integración</em> para una aplicación o contenido interactivo externo que por lo general no es HTML.</td>
+  </tr>
+  <tr>
+   <td><strong>&lt;object&gt;</strong></td>
+   <td>Representa un <em>recurso externo, </em>que será tratado como una imagen, un sub-documento HTML o un recurso externo a ser procesado por un  plugin.</td>
+  </tr>
+  <tr>
+   <td><strong>&lt;param&gt;</strong></td>
+   <td>Define <em>parámetros</em> para el uso por los plugins invocados por los elementos <code>&lt;object&gt;</code>.</td>
+  </tr>
+  <tr>
+   <td><strong>&lt;video&gt;</strong></td>
+   <td>Representa un <em>video</em> , y sus archivos de audio y capciones asociadas, con la interfaz necesaria para reproducirlos. </td>
+  </tr>
+  <tr>
+   <td><strong>&lt;audio&gt;</strong></td>
+   <td>Representa un <em>sonido</em> o <em>stream de audio.</em></td>
+  </tr>
+  <tr>
+   <td><strong>&lt;source&gt;</strong></td>
+   <td>Permite a autores especificar recursos multimedia alternativos para los elementos multimedia como  <code>&lt;video&gt;</code> o <code>&lt;audio&gt;</code>.</td>
+  </tr>
+  <tr>
+   <td><strong>&lt;track&gt;</strong></td>
+   <td>Permite a autores especificar una <em>pista de texto</em> temporizado para elementos multimedia como <code>&lt;video&gt; </code>o <em> <code>&lt;audio&gt;</code>.</em></td>
+  </tr>
+  <tr>
+   <td><strong>&lt;canvas&gt;</strong></td>
+   <td>Representa un <em>área de mapa de bits</em>  en el que se pueden utilizar scripts para renderizar gráficos como gráficas, gráficas de juegos o cualquier imagen visual al vuelo.</td>
+  </tr>
+  <tr>
+   <td><strong>&lt;map&gt;</strong></td>
+   <td>En conjunto con <code>&lt;area&gt;</code>, define un <em>mapa de imagen</em>.</td>
+  </tr>
+  <tr>
+   <td><strong>&lt;area&gt;</strong></td>
+   <td>En conjunto con  <code>&lt;map&gt;</code>, define un <em>mapa de imagen</em>.</td>
+  </tr>
+  <tr>
+   <td><strong>&lt;svg&gt;</strong></td>
+   <td>Define una <em>imagen vectorial</em> embebida.</td>
+  </tr>
+  <tr>
+   <td><strong>&lt;math&gt;</strong></td>
+   <td>Define una <em>fórmula matemática</em>.</td>
+  </tr>
+ </tbody>
+</table>
+
+<h2>Datos tabulares</h2>
+
+<table id="tabla_estandar">
+ <thead>
+  <tr>
+   <th scope="col">Elemento</th>
+   <th scope="col">Descripción</th>
+  </tr>
+ </thead>
+ <tbody>
+  <tr>
+   <td><strong>&lt;table&gt;</strong></td>
+   <td>Representa <em>datos con más de una dimensión.</em></td>
+  </tr>
+  <tr>
+   <td><strong>&lt;caption&gt;</strong></td>
+   <td>Representa el <em>título de una tabla</em>.</td>
+  </tr>
+  <tr>
+   <td><strong>&lt;colgroup&gt;</strong></td>
+   <td>Representa un <em>conjunto de una o más columnas</em> de una tabla.</td>
+  </tr>
+  <tr>
+   <td><strong>&lt;col&gt;</strong></td>
+   <td>Representa una <em>columna </em>de una tabla.</td>
+  </tr>
+  <tr>
+   <td><strong>&lt;tbody&gt;</strong></td>
+   <td>Representa el bloque de filas que describen los <em>datos contretos </em> de una tabla.</td>
+  </tr>
+  <tr>
+   <td><strong>&lt;thead&gt;</strong></td>
+   <td>Representa el bloque de filas que describen las <em>etiquetas de columna</em> de una tabla.</td>
+  </tr>
+  <tr>
+   <td><strong>&lt;tfoot&gt;</strong></td>
+   <td>Representa los bloques de filas que describen los <em>resúmenes de columna </em> de una tabla.</td>
+  </tr>
+  <tr>
+   <td><strong>&lt;tr&gt;</strong></td>
+   <td>Representa una <em>fila de celdas </em>en una tabla.</td>
+  </tr>
+  <tr>
+   <td><strong>&lt;td&gt;</strong></td>
+   <td>Representa una <em>celda de datos</em> en una tabla.</td>
+  </tr>
+  <tr>
+   <td><strong>&lt;th&gt;</strong></td>
+   <td>
+    <p>Representa una <em>celda encabezado </em>en una tabla. </p>
+   </td>
+  </tr>
+ </tbody>
+</table>
+
+<h2>Formularios</h2>
+
+<table id="tabla_estandar">
+ <thead>
+  <tr>
+   <th scope="col">Elemento</th>
+   <th scope="col">Descripción</th>
+  </tr>
+ </thead>
+ <tbody>
+  <tr>
+   <td><strong>&lt;form&gt;</strong></td>
+   <td>Representa un <em>formulario</em>, consistendo de controles que puede ser enviado a un servidor para procesamiento.</td>
+  </tr>
+  <tr>
+   <td><strong>&lt;fieldset&gt;</strong></td>
+   <td>Representa un <em>conjunto de controles</em>.</td>
+  </tr>
+  <tr>
+   <td><strong>&lt;legend&gt;</strong></td>
+   <td>Representa el <em>título </em>de un <code>&lt;fieldset&gt;</code>.</td>
+  </tr>
+  <tr>
+   <td><strong>&lt;label&gt;</strong></td>
+   <td>Representa el <em>título</em> de un control de formulario.</td>
+  </tr>
+  <tr>
+   <td><strong>&lt;input&gt;</strong></td>
+   <td>Representa un <em>campo de datos escrito </em>que permite al usuario editar los datos.</td>
+  </tr>
+  <tr>
+   <td><strong>&lt;button&gt;</strong></td>
+   <td>Representa un <em>botón</em> .</td>
+  </tr>
+  <tr>
+   <td><strong>&lt;select&gt;</strong></td>
+   <td>Representa un control que permite la <em>selección entre un conjunto de opciones</em>.</td>
+  </tr>
+  <tr>
+   <td><strong>&lt;datalist&gt;</strong></td>
+   <td>Representa un <em>conjunto de opciones predefiniddas </em>para otros controles.</td>
+  </tr>
+  <tr>
+   <td><strong>&lt;optgroup&gt;</strong></td>
+   <td>Representa un <em>conjunto de opciones, </em>agrupadas lógicamente.</td>
+  </tr>
+  <tr>
+   <td><strong>&lt;option&gt;</strong>></td>
+   <td>Representa una <em>opción</em> en un elemento <code>&lt;select&gt;</code>, o una sugerencia de un elemento <code>&lt;datalist&gt;</code>.</td>
+  </tr>
+  <tr>
+   <td><strong>&lt;textarea&gt;</strong></td>
+   <td>Representa un <em>control de edición de texto multi-línea.</em></td>
+  </tr>
+  <tr>
+   <td><strong>&lt;keygen&gt;</strong></td>
+   <td>Representa un control de <em>par generador de llaves.</em></td>
+  </tr>
+  <tr>
+   <td><strong>&lt;output&gt;</strong></td>
+   <td>Representa el <em>resultado de un cálculo.</em></td>
+  </tr>
+  <tr>
+   <td><strong>&lt;progress&gt;</strong></td>
+   <td>Representa el <em>progreso de finalización </em>de una tarea.</td>
+  </tr>
+  <tr>
+   <td><strong>&lt;meter&gt;</strong></td>
+   <td>Representa la <em>medida </em>escalar (o el valor fraccionario) dentro de un rango conocido.</td>
+  </tr>
+ </tbody>
+</table>
+
+<p></p>
+<p align="right"><em>Fuente: https://developer.mozilla.org/es/docs/HTML/HTML5/HTML5_lista_elementos</em></p>
+
+  </td>
+
+  <td id="cderecho">
+  
+<a class="twitter-timeline"  href="https://twitter.com/search?q=%40UniversidadUNAD" data-widget-id="851957675759894528">Tweets sobre @UniversidadUNAD</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+<p></p>
+<div id="visitas">Visitas</div>
+<img src="https://counter1.fcs.ovh/private/contadorvisitasgratis.php?c=4yqe1ky2apkhm29n65hrcpj98gzy3esb" border="0" title="contador web" alt="contador web">
+
+  </td>
+
+ </tr>
+</table> 
+ 
+ 
+  </td>
+</tr>
+
+<tr>
+  <td id="pie">
+  <img src="img/logoUNADblack.png" id="logoblack">
+  <img src="img/sellos_calidad.png" id="sellos">
+  </td>
+</tr>
+
+<tr>
+  <td id="autor">
+<p>Autor: Wilton Calvo Barrios - Estudiante Ingeniería de Sistemas de la UNAD</p>
+  </td>
+</tr>
+
+</table>
+</div>
+		
+</body>
+
+</html>

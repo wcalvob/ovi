@@ -1,0 +1,414 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="es" xml:lang="es" xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+<link rel="icon" type="image/ico" href="img/icono.ico" />
+<link rel="stylesheet" type="text/css" href="estilos.css" />
+<meta http-equiv="content-type" content="text/html;  charset=utf-8" />
+<title> Curso estructura básica HTML </title>
+<meta http-equiv="content-language" content="es" />
+<link rel="license" type="text/html" href="http://creativecommons.org/licenses/by-sa/4.0/" />
+<meta name="generator" content="eXeLearning 2.1 - exelearning.net" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+
+<body>
+
+<div align="center">
+<table id="pagina">
+<tr>
+  <td id="cabecera">
+  <a href="index.html"><img src="img/logo.png" id="logo"></a>
+  <a href="https://www.unad.edu.co/"><img src="img/logoUNAD.png" id="logounad"></a>
+  </td>
+</tr>
+ 
+<tr>
+  <td id="menu">
+  <ul class="nav">
+	<li><a href="index.html">Inicio</a></li>
+	<li><a href="historia_html.html" id="actual">Lecturas</a>
+	<ul>
+		<li><a href="historia_html.html">Historia HTML</a></li>
+		<li><a href="etiquetas_html.html">Etiquetas HTML</a></li>
+		<li><a href="etiqueta_head.html">Etiqueta HEAD</a></li>
+		<li><a href="etiqueta_body.html">Etiqueta BODY</a></li>
+		<li><a href="atributos.html">Atributos</a></li>
+	</ul>
+	</li>
+	<li><a href="video_etiquets_html.html">Multimedia</a>
+	<ul>
+		<li><a href="video_etiquets_html.html">Video - Etiquetas HTML</a></li>
+		<li><a href="video_css.html">Video - CSS</a></li>
+	</ul>
+	</li>
+	<li><a href="sopa_de_letras.html">Actividades</a>
+		<ul>
+		<li><a href="sopa_de_letras.html">Sopa de letras</a></li>
+		<li><a href="crucigrama.html">Crucigrama</a></li>
+		<li><a href="relacionar_columnas.html">Relacionar columnas</a></li>
+		<li><a href="completar_texto.html">Completar texto</a></li>
+		<li><a href="cuestionario.html">Cuestionario</a></li>
+		<li><a href="videoquiz.html">Videoquiz</a></li>
+	</ul>
+	</li>
+	<li><a href="autores.html">Autores</a></li>
+	</ul>
+  </td>
+</tr>
+ 
+<tr>
+  <td id="centro">
+
+  
+<table id="contenido">
+ <tr>
+  <td id="cizquierdo">
+
+  
+<h1>Atributos</h1>
+
+
+      <h2>Qué es un atributo</h2>
+      <p>Cualquier etiqueta XHTML puede contener uno o más atributos, separados por espacios, que permiten especificar la etiqueta. El código fuente tiene el siguiente aspecto:</p>
+
+      <div id="codigo">
+        <p>&lt;etiqueta atributo="valor_de_atributo"&gt;</p>
+
+        <p>&lt;etiqueta atributo1="valor_de_atributo1" atributo2="valor_de_atributo2" &gt;</p>
+      </div>
+
+      <p>En el XHTML los atributos tienen que estar siempre definidos (mediante el signo igual "=") y el valor del atributo tiene que estar entre comillas dobles o simples.</p>
+
+      <p>Existen una serie de atributos comunes a todas las etiquetas (salvo la etiqueta &lt;html&gt;) y algunas etiquetas tienen unos atributos específicos. En esta lección se comentan los atributos comunes; los atributos específicos se comentan en las lecciones dedicadas a las etiquetas correspondientes (imágenes, tablas, etc).</p>
+
+
+
+      <h2>Atributos comunes</h2>
+
+        <h3>Atributo class</h3>
+
+        <p>El atributo class permite definir clases de elementos.</p>
+
+        <p>Las hojas de estilo pueden hacer referencia a los elementos con atributo class.</p>
+
+
+        <h3>Atributo id</h3>
+
+        <p>El atributo id permite identificar de forma unívoca un elemento en un documento. Por ello, en una página web no puede haber dos elementos con el mismo valor en el atributo <span class="html-atri">id</span>. Además, un elemento sólo puede tener un atributo <span class="html-atri">id</span>, es decir, el atributo <span class="html-atri">id</span> no puede contener espacios en blanco.</p>
+
+        <p>En HTML 4 el valor de un atributo id tenía que empezar con una letra (mayúscula o minúscula, caracteres latinos) y puede contener dígitos, guiones medios (-), guiones bajos (_), comas y puntos. Si el nombre contenía puntos, a continuación del punto tenía que haber una letra. Además, algunos elementos no podían tener atributo <span class="html-atri">id</span> (<span class="html-eti">&lt;base&gt;</span>, <span class="html-eti">&lt;head&gt;</span>, <span class="html-eti">&lt;html&gt;</span>, <span class="html-eti">&lt;meta&gt;</span>, <span class="html-eti">&lt;param&gt;</span>, <span class="html-eti">&lt;script&gt;</span>, <span class="html-eti">&lt;style&gt;</span> y <span class="html-eti">&lt;title&gt;</span>).</p>
+
+        <p>En HTML 5 el atributo id puede empezar y contener cualquier carácter (salvo espacios en blanco). Además, todos los elementos pueden tener el atributo <span class="html-atri">id</span>.</p>
+
+        <p>Los elementos con atributo id pueden ser destinos de enlaces.</p>
+
+        <p>Las hojas de estilo pueden hacer referencia a un elemento con atributo id.</p>
+
+        <h3>Atributo style</h3>
+
+        <p>El atributo style permite definir propiedades de estilo a un elemento determinado.</p>
+
+        <table class="ejemplo">
+          <tbody>
+            <tr>
+              <td>
+                <pre>
+<code>&lt;p style="color:red"&gt;Esto es un párrafo &amp;lt;p&amp;gt;. &lt;/p&gt;
+
+&lt;p&gt;Esto es otro párrafo &lt;span style="color: red;"&gt;&amp;lt;p&amp;gt;&lt;/span&gt;.&lt;/p&gt;</code>
+</pre>
+              </td>
+              <td><p style="color:red">Esto es un párrafo &lt;p&gt;.</p>
+
+                <p>Esto es otro párrafo <span style="color: red;">&lt;p&gt;</span>.</p>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+
+        <p>En estos apuntes se desaconseja el uso de este atributo, puesto que uno de los principios del diseño de páginas web mediante hojas de estilo es precisamente concentrar todo lo relacionado con el formato en las hojas de estilo.</p>
+      </section>
+
+      <section id="atributo-title">
+        <h3>Atributo title</h3>
+
+        <p>El atributo title contiene el texto que se muestra en forma de "tip" (cuadrito amarillo que aparece cuando se sitúa el ratón encima del elemento).</p>
+
+        <p>En el ejemplo siguiente se muestra un "tip" cuando se sitúa el ratón sobre el primer párrafo o sobre el término "&lt;p&gt;" del segundo párrafo.</p>
+
+        <table class="ejemplo">
+          <tbody>
+            <tr>
+              <td><pre>
+<code>&lt;p title="Esto es un &amp;quot;tip&amp;quot;"&gt;Esto es un párrafo &amp;lt;p&amp;gt;. &lt;/p&gt;
+
+&lt;p&gt;Esto es otro párrafo &lt;span title="Esto es un &amp;quot;tip&amp;quot;"&gt;&amp;lt;p&amp;gt;&lt;/span&gt;.&lt;/p&gt;</code>
+</pre>
+              </td>
+              <td><p title="Esto es un &quot;tip&quot;.">Esto es un párrafo &lt;p&gt;.</p>
+
+                <p>Esto es otro párrafo <span title="Esto es un &quot;tip&quot;.">&lt;p&gt;</span>.</p>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+    </section>
+
+
+      <h2>Eventos intrínsecos</h2>
+
+      <p>Los eventos intrínsecos son atributos también comunes a todos los elementos que permiten asociar scripts a eventos relacionados con elementos de la página web (por ejemplo, que se ejecute un script cuando se hace clic en un elemento).</p>
+
+      <p>Algunos elementos son comunes a todos los elementos, pero otros son específicos de determinados elementos.</p>
+
+        <h3>Eventos de documento</h3>
+
+        <table class="conborde">
+          <caption></caption>
+          <col />
+          <col />
+          <tbody>
+            <tr>
+              <th>Atributo</th>
+              <th>Descripción</th>
+            </tr>
+            <tr>
+              <td>onload</td>
+              <td>Se ejecuta cuando se carga el documento.</td>
+            </tr>
+            <tr>
+              <td>onunload</td>
+              <td>Se ejecuta cuando se abandona el documento.</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <h3>Eventos de formulario</h3>
+
+        <table class="conborde">
+          <caption></caption>
+          <col />
+          <col />
+          <tbody>
+            <tr>
+              <th>Atributo</th>
+              <th>Descripción</th>
+            </tr>
+            <tr>
+              <td>onblur</td>
+              <td>Se ejecuta cuando un elemento pierde el foco.</td>
+            </tr>
+            <tr>
+              <td>onchange</td>
+              <td>Se ejecuta cuando un elemento cambia.</td>
+            </tr>
+            <tr>
+              <td>onfocus</td>
+              <td>Se ejecuta cuando un elemento gana el foco.</td>
+            </tr>
+            <tr>
+              <td>onreset</td>
+              <td>Se ejecuta cuando el formulario se reinicia.</td>
+            </tr>
+            <tr>
+              <td>onselect</td>
+              <td>Se ejecuta cuando un elemento se selecciona.</td>
+            </tr>
+            <tr>
+              <td>onsubmit</td>
+              <td>Se ejecuta cuando el formulario se envía.</td>
+            </tr>
+          </tbody>
+        </table>
+
+
+        <h3>Eventos de imagen</h3>
+
+        <table class="conborde">
+          <caption></caption>
+          <col />
+          <col />
+          <tbody>
+            <tr>
+              <th>Atributo</th>
+              <th>Descripción</th>
+            </tr>
+            <tr>
+              <td>onabort</td>
+              <td>Se ejecuta cuando se interrumpe la carga de la imagen.</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <h3>Eventos de teclado</h3>
+
+        <table class="conborde">
+          <caption></caption>
+          <col />
+          <col />
+          <tbody>
+            <tr>
+              <th>Atributo</th>
+              <th>Descripción</th>
+            </tr>
+            <tr>
+              <td>onkeydown</td>
+              <td>Se ejecuta cuando se pulsa una tecla.</td>
+            </tr>
+            <tr>
+              <td>onkeypress</td>
+              <td>Se ejecuta cuando se pulsa y despulsa una tecla.</td>
+            </tr>
+            <tr>
+              <td>onkeyup</td>
+              <td>Se ejecuta cuando se despulsa una tecla.</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <p>Ejemplos:</p>
+
+        <table class="ejemplo">
+          <tbody>
+            <tr>
+              <td><pre><code class="language-html">&lt;p onkeydown="this.style.color='red'"&gt;Este ... &lt;/p&gt;</code></pre></td>
+              <td><p onkeydown="this.style.color='red'">Este párrafo tiene establecido el atributo onkeydown.</p>
+              </td>
+            </tr>
+            <tr>
+              <td><pre><code class="language-html">&lt;p onkeyup="this.style.color='red'"&gt;Este ... &lt;/p&gt;</code></pre></td>
+              <td><p onkeyup="this.style.color='red'">Este párrafo tiene establecido el atributo onkeyup.</p>
+              </td>
+            </tr>
+            <tr>
+              <td><pre><code class="language-html">&lt;p onkeypress="this.style.color='red'"&gt;Este ... &lt;/p&gt;</code></pre></td>
+              <td><p onkeypress="this.style.color='red'">Este párrafo tiene establecido el atributo onkeypress.</p>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+
+
+        <h3>Eventos de ratón</h3>
+
+        <table class="conborde">
+          <caption></caption>
+          <col />
+          <col />
+          <tbody>
+            <tr>
+              <th>Atributo</th>
+              <th>Descripción</th>
+            </tr>
+            <tr>
+              <td>onclick</td>
+              <td>Se ejecuta cuando se hace clic.</td>
+            </tr>
+            <tr>
+              <td>ondblclick</td>
+              <td>Se ejecuta cuando se hace doble clic.</td>
+            </tr>
+            <tr>
+              <td>onmousedown</td>
+              <td>Se ejecuta cuando se pulsa un botón del ratón.</td>
+            </tr>
+            <tr>
+              <td>onmousemove</td>
+              <td>Se ejecuta cuando se mueve el ratón.</td>
+            </tr>
+            <tr>
+              <td>onmouseout</td>
+              <td>Se ejecuta cuando el cursor deja de situarse sobre un elemento.</td>
+            </tr>
+            <tr>
+              <td>onmouseover</td>
+              <td>Se ejecuta cuando el cursor se sitúa sobre un elemento.</td>
+            </tr>
+            <tr>
+              <td>onmouseup</td>
+              <td>Se ejecuta cuando se despulsa un botón del ratón.</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <p>Ejemplos:</p>
+
+        <table class="ejemplo">
+          <tbody>
+            <tr>
+              <td><pre><code>&lt;p onclick="this.style.color='red'"&gt;Este ... &lt;/p&gt;</code></pre></td>
+              <td><p onclick="this.style.color='red'">Este párrafo tiene establecido el atributo onclick.</p></td>
+            </tr>
+            <tr>
+              <td><pre><code>&lt;p ondblclick="this.style.color='red'"&gt;Este ... &lt;/p&gt;</code></pre></td>
+              <td><p ondblclick="this.style.color='red'">Este párrafo tiene establecido el atributo ondblclick.</p>
+              </td>
+            </tr>
+            <tr>
+              <td><pre><code>&lt;p onmouseup="this.style.color='red'"&gt;Este ... &lt;/p&gt;</code></pre></td>
+              <td><p onmouseup="this.style.color='red'">Este párrafo tiene establecido el atributo onmouseup.</p>
+              </td>
+            </tr>
+            <tr>
+              <td><pre><code>&lt;p onmousedown="this.style.color='red'"&gt;Este ... &lt;/p&gt;</code></pre></td>
+              <td><p onmousedown="this.style.color='red'">Este párrafo tiene establecido el atributo onmousedown.</p></td>
+            </tr>
+            <tr>
+              <td><pre><code>&lt;p onmousemove="this.style.color='red'"&gt;Este ... &lt;/p&gt;</code></pre></td>
+              <td><p onmousemove="this.style.color='red'">Este párrafo tiene establecido el atributo onmousemove.</p></td>
+            </tr>
+            <tr>
+              <td><pre><code>&lt;p onmouseover="this.style.color='red'"&gt;Este ... &lt;/p&gt;</code></pre></td>
+              <td><p onmouseover="this.style.color='red'">Este párrafo tiene establecido el atributo onmouseover.</p></td>
+            </tr>
+            <tr>
+              <td><pre><code>&lt;p onmouseout="this.style.color='red'"&gt;Este ... &lt;/p&gt;</code></pre></td>
+              <td><p onmouseout="this.style.color='red'">Este párrafo tiene establecido el atributo onmouseout.</p></td>
+            </tr>
+          </tbody>
+        </table>
+		<p></p>
+
+		
+
+  </td>
+
+  <td id="cderecho">
+  
+<a class="twitter-timeline"  href="https://twitter.com/search?q=%40UniversidadUNAD" data-widget-id="851957675759894528">Tweets sobre @UniversidadUNAD</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+<p></p>
+<div id="visitas">Visitas</div>
+<img src="https://counter1.fcs.ovh/private/contadorvisitasgratis.php?c=4yqe1ky2apkhm29n65hrcpj98gzy3esb" border="0" title="contador web" alt="contador web">
+
+  </td>
+
+ </tr>
+</table> 
+ 
+ 
+  </td>
+</tr>
+
+<tr>
+  <td id="pie">
+  <img src="img/logoUNADblack.png" id="logoblack">
+  <img src="img/sellos_calidad.png" id="sellos">
+  </td>
+</tr>
+
+<tr>
+  <td id="autor">
+<p>Autor: Wilton Calvo Barrios - Estudiante Ingeniería de Sistemas de la UNAD</p>
+  </td>
+</tr>
+
+</table>
+</div>
+		
+</body>
+
+</html>

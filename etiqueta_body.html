@@ -1,0 +1,148 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="es" xml:lang="es" xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+<link rel="icon" type="image/ico" href="img/icono.ico" />
+<link rel="stylesheet" type="text/css" href="estilos.css" />
+<meta http-equiv="content-type" content="text/html;  charset=utf-8" />
+<title> Curso estructura básica HTML </title>
+<meta http-equiv="content-language" content="es" />
+<link rel="license" type="text/html" href="http://creativecommons.org/licenses/by-sa/4.0/" />
+<meta name="generator" content="eXeLearning 2.1 - exelearning.net" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+
+<body>
+
+<div align="center">
+<table id="pagina">
+<tr>
+  <td id="cabecera">
+  <a href="index.html"><img src="img/logo.png" id="logo"></a>
+  <img src="img/logoUNAD.png" id="logounad">
+  </td>
+</tr>
+ 
+<tr>
+  <td id="menu">
+  <ul class="nav">
+	<li><a href="index.html">Inicio</a></li>
+	<li><a href="historia_html.html" id="actual">Lecturas</a>
+	<ul>
+		<li><a href="historia_html.html">Historia HTML</a></li>
+		<li><a href="etiquetas_html.html">Etiquetas HTML</a></li>
+		<li><a href="etiqueta_head.html">Etiqueta HEAD</a></li>
+		<li><a href="etiqueta_body.html">Etiqueta BODY</a></li>
+		<li><a href="atributos.html">Atributos</a></li>
+	</ul>
+	</li>
+	<li><a href="video_etiquets_html.html">Multimedia</a>
+	<ul>
+		<li><a href="video_etiquets_html.html">Video - Etiquetas HTML</a></li>
+		<li><a href="video_css.html">Video - CSS</a></li>
+	</ul>
+	</li>
+	<li><a href="sopa_de_letras.html">Actividades</a>
+		<ul>
+		<li><a href="sopa_de_letras.html">Sopa de letras</a></li>
+		<li><a href="crucigrama.html">Crucigrama</a></li>
+		<li><a href="relacionar_columnas.html">Relacionar columnas</a></li>
+		<li><a href="completar_texto.html">Completar texto</a></li>
+		<li><a href="cuestionario.html">Cuestionario</a></li>
+		<li><a href="videoquiz.html">Videoquiz</a></li>
+	</ul>
+	</li>
+	<li><a href="autores.html">Autores</a></li>
+	</ul>
+  </td>
+</tr>
+ 
+<tr>
+  <td id="centro">
+
+  
+<table id="contenido">
+ <tr>
+  <td id="cizquierdo">
+
+  <h1>Etiqueta BODY</h1>
+<p>El cuerpo de un documento HTML es la parte central de una página web, este se define por medio de la etiqueta BODY. En este artículo nos centraremos a hablar de esta etiqueta, sus atributos y propiedades.</p>
+<p>De las dos partes en que se divide un documento HTML (HEAD y BODY), BODY es la segunda. BODY es la etiqueta usada para indicar el cuerpo de un documento HTML, es la parte donde se describe el contenido de la página (su estructura, su forma, sus colores, texto, y todo lo visual), su inicio lo indica la etiqueta <code>&lt;body&gt;</code> y su final con la etiqueta <code>&lt;/body&gt;</code>, se escribe así:</p>
+
+<p>
+<div id="codigo">
+<code>
+&lt;html&gt;<br>
+&nbsp;&nbsp;&lt;head&gt;<br>
+&nbsp;&nbsp;&lt;/head&gt;<br>
+&nbsp;&nbsp;&lt;body&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Todo lo que esté aquí pertenece al BODY<br>
+&nbsp;&nbsp;&nbsp;&nbsp;Aquí va el diseño de la página y su contenido<br>
+&nbsp;&nbsp;&lt;/body&gt;<br>
+&lt;/html&gt;
+</code>
+</div>    </p>
+    
+<p>La variedad de etiquetas HTML que el BODY puede contener son mucho mas que las que existen para el HEAD, cosa bastante obvia pues la parte de mayor peso es el BODY.</p>
+
+<p>Dentro de la etiqueta <code>&lt;body&gt;</code> se pueden agregar atributos para indicar un color y/o imagen de fondo de la página, color del texto, color de los links, pero en HTML5 se ha desaprobado el uso de estos atributos y esto se tiene que indicar con CSS, este hecho no significa que no funcionen, de hecho se pueden usar y funciona pero siempre es recomendable ajustarse a los estándares, por cuestiones de compatibilidad y cosas por el estilo. Aquí les dejo la lista de los atributos que pueden ir dentro de la etiqueta <code>&lt;body&gt;</code> y que anteriormente eran muy usados, pero mi recomendación es aprender CSS y seguir los nuevos estándares de la W3C.</p>
+
+<p><b>background</b> - Para especificar una imagen de fondo</p>
+<div id="codigo"><code>&lt;body background="imagen.jpg"&gt;</code></div>
+
+<p><b>bgcolor</b> - Para especificar un color de fondo</p>
+<div id="codigo"><code>&lt;body bgcolor="color"&gt;</code></div>
+
+<p><b>link</b> - Para especificar el color de los enlaces no visitados</p>
+<div id="codigo"><code>&lt;body link="color"&gt;</code></div>
+
+<p><b>alink</b> - Para especificar el color de un enlace activo</p>
+<div id="codigo"><code>&lt;body alink="color"&gt;</code></div>
+
+<p><b>vlink</b> - Para especificar el color de los enlaces visitados</p>
+<div id="codigo"><code>&lt;body vlink="color"&gt;</code></div>
+
+<p><b>text</b> - Para especificar el color del texto de la página</p>
+<div id="codigo"><code>&lt;body text="color"&gt;</code></div>
+
+
+
+  </td>
+
+  <td id="cderecho">
+  
+<a class="twitter-timeline"  href="https://twitter.com/search?q=%40UniversidadUNAD" data-widget-id="851957675759894528">Tweets sobre @UniversidadUNAD</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+<p></p>
+<div id="visitas">Visitas</div>
+<img src="https://counter1.fcs.ovh/private/contadorvisitasgratis.php?c=4yqe1ky2apkhm29n65hrcpj98gzy3esb" border="0" title="contador web" alt="contador web">
+
+  </td>
+
+ </tr>
+</table> 
+ 
+ 
+  </td>
+</tr>
+
+<tr>
+  <td id="pie">
+  <img src="img/logoUNADblack.png" id="logoblack">
+  <img src="img/sellos_calidad.png" id="sellos">
+  </td>
+</tr>
+
+<tr>
+  <td id="autor">
+<p>Autor: Wilton Calvo Barrios - Estudiante Ingeniería de Sistemas de la UNAD</p>
+  </td>
+</tr>
+
+</table>
+</div>
+		
+</body>
+
+</html>

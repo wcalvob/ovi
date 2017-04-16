@@ -1,0 +1,268 @@
+body {
+
+ }
+
+#pagina {
+width:100%;
+float:center;
+padding:0px;
+font-family:Franklin Gothic Book;
+background-color:white;
+ }
+	
+#cabecera {
+width:auto; 
+background-color:; 
+padding:0px;
+ }
+#cabecera h1 {
+position:absolute;
+font-weight:bold;
+ }
+#logounad {
+width:400px; 
+float:right; 
+position:relative;
+ }
+
+#logo {
+float:left;
+position:relative;
+width:auto;
+height:50px;
+margin-top:20px;
+ }
+#logo:hover{
+opacity: 0.8;
+ }
+  
+#menu {
+background-color:#005883;
+padding:0px;
+font-family:Franklin Gothic Book;
+
+border-radius: 10px 10px 10px 10px;
+-moz-border-radius: 10px 10px 10px 10px;
+-webkit-border-radius: 10px 10px 10px 10px;
+border: 0px solid #000000;
+
+ }
+
+#centro {
+padding:0px;
+vertical-align:top;
+ } 
+ 
+#contenido {
+width:100%;
+margin:0px;
+ }
+ 
+#cizquierdo {
+width:auto;
+vertical-align:top;
+padding:10px;
+background-repeat:repeat;
+border-radius: 10px 10px 10px 10px;
+-moz-border-radius: 10px 10px 10px 10px;
+-webkit-border-radius: 10px 10px 10px 10px;
+border: 1px solid #b3b3b3;
+ }
+#cizquierdo h1 {
+text-shadow: 0px 2px 3px #555;
+ }
+#cizquierdo {
+font-size:20px;
+ }
+.cizquierdo_act{
+background-image:url('img/fondo_left.png');
+color:white;
+ }
+.cizquierdo_act h1{
+color: white;
+text-shadow: 0px 2px 3px black;
+ }
+
+#tabla_estandar {
+
+ } 
+#tabla_estandar th {
+background-color:#b3b3b3;
+padding:3px;
+border:1px solid black;
+ }
+#tabla_estandar td {
+border:1px solid #b3b3b3;
+padding:5px;
+ }
+
+.conborde {
+border:1px solid black;
+ }
+.conborde td{
+border:1px solid black;
+padding:5px 10px 5px 10px;
+ }
+
+.ejemplo td{
+border:1px solid black;
+padding-left:5px;
+padding-right:5px;
+ }
+ 
+#codigo {
+width:95%;
+background-color:#b3b3b3;
+border-left:5px solid #f2b80d;
+padding:10px;
+margin:5px;
+ }
+
+.div_curve {
+padding:10px;
+margin-bottom:10px;
+border-radius: 30px 30px 30px 30px;
+-moz-border-radius: 30px 30px 30px 30px;
+-webkit-border-radius: 30px 30px 30px 30px;
+border: 0px solid #b3b3b3;
+ }
+.div_curve h1 {
+text-align:center;
+ }
+.div_curve p {
+font-size:20px;
+ }
+
+#cderecho {
+width:250px;
+border-left:1px solid #b3b3b3;
+vertical-align:top;
+text-align:center;
+padding:5px;
+
+border-radius: 10px 10px 10px 10px;
+-moz-border-radius: 10px 10px 10px 10px;
+-webkit-border-radius: 10px 10px 10px 10px;
+border: 1px solid #b3b3b3;
+
+ }
+ 		
+ul, ol {
+list-style:none;
+ }
+			
+.nav {
+width:1000px;
+margin:0 auto;
+float:left;
+ }
+.nav > li {
+float:left;
+ }		
+.nav li a {
+background-color:#005883;
+color:#fff;
+text-decoration:none;
+padding:10px 10px;
+display:block;
+min-width:140px;
+text-align:center;
+font-weight:bold;
+transition: all 500ms ease;
+margin-right:5px;
+color: white;
+text-shadow: 0px 1px 1px black;
+font-family:Franklin Gothic Book;
+font-size:20px;
+border-radius: 10px 10px 10px 10px;
+-moz-border-radius: 10px 10px 10px 10px;
+-webkit-border-radius: 10px 10px 10px 10px;
+border: 0px solid #000000;
+
+ }		
+.nav li a:hover {
+background-color:#F0B429;
+ }		
+.nav li ul {
+display:none;
+position:absolute;
+min-width:140px;
+margin-bottom:1px;
+ }		
+.nav li:hover > ul {
+display:block;
+ }			
+.nav li ul li {
+position:relative;
+text-align:left;
+border-top:1px solid transparent;
+ }		
+.nav li ul li ul {
+right:-140px;
+top:0px;
+ }
+#actual {
+background-color:#F0B429;
+color:white;
+ }
+#actual:hover {
+color:white;
+ }
+
+#visitas {
+font-weight:bold; 
+padding:4px; 
+margin-bottom:5px;
+background-color:#F47920;
+color:white;
+font-size:20px;
+border-radius: 10px 10px 10px 10px;
+-moz-border-radius: 10px 10px 10px 10px;
+-webkit-border-radius: 10px 10px 10px 10px;
+border: 0px solid #b3b3b3;
+ }
+
+#pie {
+padding:10px;
+background-color:black;
+vertical-align:middle;
+border-radius: 10px 10px 10px 10px;
+-moz-border-radius: 10px 10px 10px 10px;
+-webkit-border-radius: 10px 10px 10px 10px;
+border: 0px solid #b3b3b3;
+ }
+
+#logoblack {
+margin-top:40px;
+width:300px;
+float:left;
+ } 
+
+#sellos {
+width:500px;
+float:right;
+ }
+ 
+#autor {
+background-color:#333333;
+padding:5px;
+text-align:center;
+color:white;
+border-radius: 10px 10px 10px 10px;
+-moz-border-radius: 10px 10px 10px 10px;
+-webkit-border-radius: 10px 10px 10px 10px;
+border: 0px solid #b3b3b3;
+ }
+
+#autor p {
+margin:5px;
+ }
+
+.imghtml:hover {
+-webkit-transform: scale(1.7);
+-ms-transform: scale(1.7);
+transform: scale(1.7);
+ }
+ 
+ 
+
